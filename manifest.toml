@@ -29,9 +29,9 @@ ldap = false
 
 sso = false
 
-disk = "50M"
+disk = "500M"
 ram.build = "50M"
-ram.runtime = "50M"
+ram.runtime = "400M"
 
 [install]
     [install.domain]
