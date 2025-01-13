@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Stirling PDF
 
-[![集成程度](https://dash.yunohost.org/integration/stirling-pdf.svg)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/stirling-pdf)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
+![工作状态](https://apps.yunohost.org/badge/state/stirling-pdf)
+![维护状态](https://apps.yunohost.org/badge/maintained/stirling-pdf)
 
 [![使用 YunoHost 安装 Stirling PDF](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=stirling-pdf)
 

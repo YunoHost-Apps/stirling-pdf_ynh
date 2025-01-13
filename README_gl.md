@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # Stirling PDF para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/stirling-pdf.svg)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/stirling-pdf)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/stirling-pdf)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/stirling-pdf)
 
 [![Instalar Stirling PDF con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=stirling-pdf)
 

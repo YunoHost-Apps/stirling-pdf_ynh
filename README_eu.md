@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Stirling PDF YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/stirling-pdf.svg)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/stirling-pdf)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/stirling-pdf)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/stirling-pdf)
 
 [![Instalatu Stirling PDF YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=stirling-pdf)
 

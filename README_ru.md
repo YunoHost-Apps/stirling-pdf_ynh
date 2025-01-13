@@ -5,7 +5,9 @@
 
 # Stirling PDF для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/stirling-pdf.svg)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/stirling-pdf.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/stirling-pdf)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
+![Состояние работы](https://apps.yunohost.org/badge/state/stirling-pdf)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/stirling-pdf)
 
 [![Установите Stirling PDF с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=stirling-pdf)
 
