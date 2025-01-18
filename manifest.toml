@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "stirling-pdf"
 name = "Stirling PDF"
-description.en = "Application that allows you to perform various operations on PDF files"
-description.fr = "Application qui vous permet d'effectuer diverses opérations sur des fichiers PDF"
+description.en = "Perform various operations on PDF files"
+description.fr = "Effectuew diverses opérations sur des fichiers PDF"
 
 version = "0.29.0~ynh2"
 
@@ -29,9 +29,9 @@ ldap = false
 
 sso = false
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "500M"
+ram.build = "500M"
+ram.runtime = "400M"
 
 [install]
     [install.domain]
@@ -62,10 +62,10 @@ ram.runtime = "50M"
     autoupdate.asset = "Stirling-PDF.jar"
 
     [resources.sources.jdk]
-    amd64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz"
-    amd64.sha256 = "51fb4d03a4429c39d397d3a03a779077159317616550e4e71624c9843083e7b9"
-    arm64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.4_7.tar.gz"
-    arm64.sha256 = "d768eecddd7a515711659e02caef8516b7b7177fa34880a56398fd9822593a79"
+    amd64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_x64_linux_hotspot_21.0.5_11.tar.gz"
+    amd64.sha256 = "3c654d98404c073b8a7e66bffb27f4ae3e7ede47d13284c132d40a83144bfd8c"
+    arm64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.5_11.tar.gz"
+    arm64.sha256 = "6482639ed9fd22aa2e704cc366848b1b3e1586d2bf1213869c43e80bca58fe5c"
     autoupdate.strategy = "latest_github_release"
     autoupdate.version_regex = "jdk-(\\d+\\.\\d+\\.\\d+)\\+(.*)"
     autoupdate.upstream = "https://github.com/adoptium/temurin21-binaries"
