@@ -31,7 +31,7 @@ This is a robust, locally hosted web-based PDF manipulation tool. It enables you
 - Database Backup and Import (see here for documentation)
 
 
-**Поставляемая версия:** 0.38.0~ynh1
+**Поставляемая версия:** 0.38.0~ynh2
 
 **Демо-версия:** <https://stirlingpdf.io/>
 
