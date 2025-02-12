@@ -1,5 +1,5 @@
 [Unit]
-Description=Stirling-PDF service
+Description=Stirling-PDF: perform various operations on PDF files
 After=syslog.target network.target
 
 [Service]
