@@ -45,9 +45,9 @@ system:
   enableAnalytics: false
 
 ui:
-  appName: '' # Application's visible name
-  homeDescription: '' # Short description or tagline shown on homepage.
-  appNameNavbar: '' # Name displayed on the navigation bar
+  appName: 'Boite à outils PDF' # Application's visible name
+  homeDescription: 'Votre guichet unique hébergé localement pour travailler sur vos PDF.' # Short description or tagline shown on homepage.
+  appNameNavbar: 'Boite à outils PDF' # Name displayed on the navigation bar
 
 endpoints:
   toRemove: [] # List endpoints to disable (e.g. ['img-to-pdf', 'remove-pages'])
