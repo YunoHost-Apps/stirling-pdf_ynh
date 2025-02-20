@@ -4,5 +4,18 @@ test_format = 1.0
 
 [default]
 
+    # ------------
+    # Tests to run
+    # ------------
+
+    # -------------------------------
+    # Default args to use for install
+    # -------------------------------
+
     args.language = "fr-FR"
-    
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.13829fd309324f8eecec24f210760a90427b5a26.name = "Upgrade from 0.41.0~ynh2"
