@@ -21,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 Il s'agit d'un outil de manipulation de PDF robuste, hébergé localement et basé sur le Web. Il vous permet d'effectuer diverses opérations sur des fichiers PDF, notamment le fractionnement, la fusion, la conversion, la réorganisation, l'ajout d'images, la rotation, la compression, etc. Cette application Web hébergée localement a évolué pour englober un ensemble complet de fonctionnalités, répondant à toutes vos exigences PDF.
 
 
-**Version incluse :** 0.43.2~ynh1
+**Version incluse :** 0.44.0~ynh1
 
 **Démo :** <https://stirlingpdf.io/>
 
