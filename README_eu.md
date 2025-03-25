@@ -31,7 +31,7 @@ This is a robust, locally hosted web-based PDF manipulation tool. It enables you
 - Database Backup and Import (see here for documentation)
 
 
-**Paketatutako bertsioa:** 0.44.3~ynh1
+**Paketatutako bertsioa:** 0.45.0~ynh1
 
 **Demoa:** <https://stirlingpdf.io/>
 
@@ -52,7 +52,7 @@ This is a robust, locally hosted web-based PDF manipulation tool. It enables you
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/stirling-pdf_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/stirling-pdf_ynh/tree/testing --debug
