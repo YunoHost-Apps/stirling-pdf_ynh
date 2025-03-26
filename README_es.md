@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Stirling PDF para Yunohost
+# Stirling PDF para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/stirling-pdf)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/stirling-pdf)
@@ -31,7 +31,7 @@ This is a robust, locally hosted web-based PDF manipulation tool. It enables you
 - Database Backup and Import (see here for documentation)
 
 
-**Versión actual:** 0.44.3~ynh1
+**Versión actual:** 0.45.0~ynh1
 
 **Demo:** <https://stirlingpdf.io/>
 
