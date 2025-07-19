@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "1.0.2~ynh2"
+version = "1.0.2~ynh3"
 
 maintainers = []
 
