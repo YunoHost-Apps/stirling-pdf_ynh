@@ -83,4 +83,4 @@ ram.runtime = "400M"
     [resources.ports]
 
     [resources.apt]
-    packages = "tesseract-ocr-fra, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf"
+    packages = "tesseract-ocr-fra, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf, qpdf, unoconv"
