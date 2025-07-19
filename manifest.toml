@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "1.0.2~ynh2"
+version = "1.0.2~ynh3"
 
 maintainers = []
 
@@ -26,7 +26,6 @@ architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "500M"
@@ -45,7 +44,7 @@ ram.runtime = "400M"
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
     type = "select"
-    choices = ["de-DE", "fr-FR", "en-US"]
+    choices = ["de-DE", "fr-FR", "en-GB", "it_IT", "hu_HU", "pt_PT", "es_ES"]
     default = "fr-FR"
 
 [resources]
@@ -84,4 +83,4 @@ ram.runtime = "400M"
     [resources.ports]
 
     [resources.apt]
-    packages = "tesseract-ocr-fra, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf"
+    packages = "tesseract-ocr-fra, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf, qpdf, unoconv, weasyprint"
