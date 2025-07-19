@@ -35,8 +35,25 @@ security:
     scopes: openid, profile, email # Specify the scopes for which the application will request permissions
     provider: google # Set this to your OAuth provider's name, e.g., 'google' or 'keycloak'
 
+#premium:
+#  key: 00000000-0000-0000-0000-000000000000
+#  enabled: false # Enable license key checks for pro/enterprise features
+#  proFeatures:
+#    SSOAutoLogin: false
+#    CustomMetadata:
+#      autoUpdateMetadata: false
+#      author: username
+#      creator: Stirling-PDF
+#      producer: Stirling-PDF
+#    googleDrive:
+#      enabled: false
+#      clientId: ''
+#      apiKey: ''
+#      appId: ''
+
 system:
   defaultLocale: '__LANGUAGE__' # Set the default language (e.g. 'de-DE', 'fr-FR', etc)
+  tessdataDir: /usr/share/tesseract-ocr/5/tessdata/
   googlevisibility: false # 'true' to allow Google visibility (via robots.txt), 'false' to disallow
   enableAlphaFunctionality: false # Set to enable functionality which might need more testing before it fully goes live (This feature might make no changes)
   showUpdate: true # see when a new update is available
@@ -56,18 +73,21 @@ endpoints:
 metrics:
   enabled: true # 'true' to enable Info APIs (`/api/*`) endpoints, 'false' to disable
 
-#premium:
-#  key: 00000000-0000-0000-0000-000000000000
-#  enabled: false # Enable license key checks for pro/enterprise features
-#  proFeatures:
-#      SSOAutoLogin: false
-#      CustomMetadata:
-#        autoUpdateMetadata: false
-#        author: username
-#        creator: Stirling-PDF
-#        producer: Stirling-PDF
-#      googleDrive:
-#        enabled: false
-#        clientId: ''
-#        apiKey: ''
-#        appId: ''
+processExecutor:
+  sessionLimit: # Process executor instances limits
+    libreOfficeSessionLimit: 1
+    pdfToHtmlSessionLimit: 1
+    qpdfSessionLimit: 4
+    tesseractSessionLimit: 1
+    pythonOpenCvSessionLimit: 8
+    weasyPrintSessionLimit: 16
+    installAppSessionLimit: 1
+    calibreSessionLimit: 1
+  timeoutMinutes: # Process executor timeout in minutes
+    libreOfficetimeoutMinutes: 30
+    pdfToHtmltimeoutMinutes: 20
+    pythonOpenCvtimeoutMinutes: 30
+    weasyPrinttimeoutMinutes: 30
+    installApptimeoutMinutes: 60
+    calibretimeoutMinutes: 30
+    tesseractTimeoutMinutes: 30
