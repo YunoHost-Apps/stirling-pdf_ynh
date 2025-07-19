@@ -55,3 +55,19 @@ endpoints:
 
 metrics:
   enabled: true # 'true' to enable Info APIs (`/api/*`) endpoints, 'false' to disable
+
+#premium:
+#  key: 00000000-0000-0000-0000-000000000000
+#  enabled: false # Enable license key checks for pro/enterprise features
+#  proFeatures:
+#      SSOAutoLogin: false
+#      CustomMetadata:
+#        autoUpdateMetadata: false
+#        author: username
+#        creator: Stirling-PDF
+#        producer: Stirling-PDF
+#      googleDrive:
+#        enabled: false
+#        clientId: ''
+#        apiKey: ''
+#        appId: ''
