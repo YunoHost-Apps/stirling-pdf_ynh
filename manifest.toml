@@ -83,4 +83,12 @@ ram.runtime = "400M"
     [resources.ports]
 
     [resources.apt]
-    packages = "tesseract-ocr-fra, libreoffice, libreoffice-java-common, default-jre, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf, qpdf, unoconv, weasyprint"
+    packages = "tesseract-ocr-fra, libreoffice, libreoffice-java-common, default-jre, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf, qpdf, weasyprint"
+    packages_from_raw_bash = """
+    if [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
+        echo "unoconv";
+    elif [[ $YNH_DEBIAN_VERSION == "trixie" ]]; then
+        echo "";
+        # FIXME : unoconv don't seem to exist in Trixie anymore ?!
+    fi
+    """
