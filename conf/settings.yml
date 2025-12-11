@@ -34,7 +34,16 @@ security:
     useAsUsername: email # Default is 'email'; custom fields can be used as the username
     scopes: openid, profile, email # Specify the scopes for which the application will request permissions
     provider: google # Set this to your OAuth provider's name, e.g., 'google' or 'keycloak'
-
+  jwt:
+      persistence: true # replaces 'enabled'
+      enableKeyRotation: true # NEW
+      enableKeyCleanup: true # replaces 'keyCleanup'
+      keyRetentionDays: 7
+    validation:  # NEW section
+    trust:
+      serverAsAnchor: true
+      useSystemTrust: true
+      
 #premium:
 #  key: 00000000-0000-0000-0000-000000000000
 #  enabled: false # Enable license key checks for pro/enterprise features
@@ -45,14 +54,11 @@ security:
 #      author: username
 #      creator: Stirling-PDF
 #      producer: Stirling-PDF
-#    googleDrive:
-#      enabled: false
-#      clientId: ''
-#      apiKey: ''
-#      appId: ''
 
 system:
-  defaultLocale: '__LANGUAGE__' # Set the default language (e.g. 'de-DE', 'fr-FR', etc)
+  corsAllowedOrigins: ['https://__DOMAIN__']
+  frontendUrl: 'https://__DOMAIN__'
+  defaultLocale: __LANGUAGE__ # Set the default language (e.g. 'de-DE', 'fr-FR', etc)
   tessdataDir: /usr/share/tesseract-ocr/5/tessdata/
   googlevisibility: false # 'true' to allow Google visibility (via robots.txt), 'false' to disallow
   enableAlphaFunctionality: false # Set to enable functionality which might need more testing before it fully goes live (This feature might make no changes)
@@ -62,8 +68,7 @@ system:
   enableAnalytics: false
 
 ui:
-  appName: 'Boite à outils PDF' # Application's visible name
-  homeDescription: 'Votre guichet unique hébergé localement pour travailler sur vos PDF.' # Short description or tagline shown on homepage.
+  logoStyle: classic # NEW in V2 - Options: 'classic' or 'modern'
   appNameNavbar: 'Boite à outils PDF' # Name displayed on the navigation bar
 
 endpoints:
@@ -91,3 +96,6 @@ processExecutor:
     installApptimeoutMinutes: 60
     calibretimeoutMinutes: 30
     tesseractTimeoutMinutes: 30
+
+mail:
+  enableInvites: false # NEW in V2
