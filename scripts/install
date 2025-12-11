@@ -37,6 +37,9 @@ ynh_config_add_nginx
 ynh_config_add_systemd
 yunohost service add "$app" --description="Perform various operations on PDF files" --log="/var/log/$app/$app.log"
 
+# Create a dedicated Fail2Ban config
+ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failregex="Failed login attempt from IP: <HOST>"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
