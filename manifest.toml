@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "2.1.3~ynh1"
+version = "2.1.4~ynh1"
 
 maintainers = []
 
@@ -54,8 +54,8 @@ ram.runtime = "400M"
     [resources.sources.main]
     in_subdir = false
     rename= "Stirling-PDF.jar"
-    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.1.3/Stirling-PDF.jar"
-    sha256 = "97b23511253c77bc25d14bc53c9ded7aaa7f5b1cc4de355ba318b01b815ff130"
+    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.1.4/Stirling-PDF.jar"
+    sha256 = "5756ffd43c32e59abebfe231341360b942e41bfd5ec6cb0d39fa2c54a891d9ab"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "Stirling-PDF.jar"
