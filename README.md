@@ -12,7 +12,7 @@ Perform various operations on PDF files
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.stirlingpdf.com/)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://stirlingpdf.io/)
-[![Version: 2.3.0~ynh1](https://img.shields.io/badge/Version-2.3.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
+[![Version: 2.4.0~ynh1](https://img.shields.io/badge/Version-2.4.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/stirling-pdf/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/stirling-pdf"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
@@ -38,6 +38,11 @@ sudo yunohost app install https://github.com/YunoHost-Apps/stirling-pdf_ynh/tree
 
 # upgrade an existing install:
 sudo yunohost app upgrade stirling-pdf -u https://github.com/YunoHost-Apps/stirling-pdf_ynh/tree/testing
+```
+
+You can also switch to the testing branch to update from testing by default (as same as for APT when you chose to use a testing repos) with this command:
+```bash
+sudo yunohost app setting stirling-pdf upgrade_channel -v testing
 ```
 
 ### 📚 App packaging documentation
