@@ -89,6 +89,6 @@ ram.runtime = "400M"
         echo "unoconv";
     elif [[ $YNH_DEBIAN_VERSION == "trixie" ]]; then
         echo "";
-        # FIXME : unoconv don't seem to exist in Trixie anymore ?!
+        # unoconv don't seem to exist in Trixie anymore ?!
     fi
     """
