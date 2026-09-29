@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "2.1.2~ynh1"
+version = "3.0.1~ynh1"
 
 maintainers = []
 
@@ -20,7 +20,7 @@ userdoc = "https://docs.stirlingpdf.com/"
 code = "https://github.com/Stirling-Tools/Stirling-PDF"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -54,20 +54,20 @@ ram.runtime = "400M"
     [resources.sources.main]
     in_subdir = false
     rename= "Stirling-PDF.jar"
-    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.1.2/Stirling-PDF.jar"
-    sha256 = "a45b7e7c866e4b6d207998b9122701c9c688d984cca917b32f0a2a3d5389990c"
+    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v3.0.1/Stirling-PDF.jar"
+    sha256 = "faad522999e54c8034e54e19859a5546f7fdfb28bdbca4a679e3bd5740d35fae"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "Stirling-PDF.jar"
 
     [resources.sources.jdk]
-    amd64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_x64_linux_hotspot_21.0.9_10.tar.gz"
-    amd64.sha256 = "810d3773df7e0d6c4394e4e244b264c8b30e0b05a0acf542d065fd78a6b65c2f"
-    arm64.url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.9_10.tar.gz"
-    arm64.sha256 = "edf0da4debe7cf475dbe320d174d6eed81479eb363f41e38a2efb740428c603a"
+    amd64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4_7.tar.gz"
+    amd64.sha256 = "e58fcdcd637b25c03ca84cbbcefc70d11efb8f4b4cbd05decc9f661769d77f94"
+    arm64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4_7.tar.gz"
+    arm64.sha256 = "621f7196f0b682fb557da58bec89bd7dfe5419811fe1c0ba75c9cc8432f084c7"
     autoupdate.strategy = "latest_github_release"
     autoupdate.version_regex = "jdk-(\\d+\\.\\d+\\.\\d+)\\+(.*)"
-    autoupdate.upstream = "https://github.com/adoptium/temurin21-binaries"
+    autoupdate.upstream = "https://github.com/adoptium/temurin25-binaries"
     autoupdate.asset.amd64 = "OpenJDK.*-jdk_x64_linux_hotspot_.*\\.tar\\.gz$"
     autoupdate.asset.arm64 = "OpenJDK.*-jdk_aarch64_linux_hotspot_.*\\.tar\\.gz$"
 
