@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "3.2.1~ynh1"
+version = "3.2.2~ynh1"
 
 maintainers = []
 
@@ -54,17 +54,17 @@ ram.runtime = "400M"
     [resources.sources.main]
     in_subdir = false
     rename= "Stirling-PDF.jar"
-    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v3.2.1/Stirling-PDF.jar"
-    sha256 = "135006dfa974f9805708ecbf931ccd3da5b68f29cad7d62b9e67cc3a72ec4792"
+    url = "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v3.2.2/Stirling-PDF.jar"
+    sha256 = "34ea9dda52f1432baa0a21cafc785005de1df5280d481e3352cc246e6b8c71e1"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "Stirling-PDF.jar"
 
     [resources.sources.jdk]
-    amd64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4_7.tar.gz"
-    amd64.sha256 = "e58fcdcd637b25c03ca84cbbcefc70d11efb8f4b4cbd05decc9f661769d77f94"
-    arm64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4_7.tar.gz"
-    arm64.sha256 = "621f7196f0b682fb557da58bec89bd7dfe5419811fe1c0ba75c9cc8432f084c7"
+    amd64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_linux_hotspot_25.0.5_8.tar.gz"
+    amd64.sha256 = "68982529869257d0ee6b824ec5aa270ff8b118bb438670da0b97ebdab178d7fb"
+    arm64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5_8.tar.gz"
+    arm64.sha256 = "bb5b2ded252f21c6090cf780b0a408ad0d83bbb557e702955643557f13231880"
     autoupdate.strategy = "latest_github_release"
     autoupdate.version_regex = "jdk-(\\d+\\.\\d+\\.\\d+)\\+(.*)"
     autoupdate.upstream = "https://github.com/adoptium/temurin25-binaries"
