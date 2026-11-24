@@ -11,6 +11,10 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Removing system configurations related to $app..."
 
+ynh_script_progression "Stopping $app's systemd service..."
+
+ynh_systemctl --service="$app" --action="stop" --wait_until="Shutting down job result cleanup executor" --log_path="$install_dir/logs/info.log"
+
 ynh_config_remove_fail2ban
 
 if ynh_hide_warnings yunohost service status "$app" >/dev/null; then

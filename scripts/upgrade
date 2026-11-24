@@ -11,13 +11,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Stopping $app's systemd service..."
 
-wait_until=""
-
-if [ ! if ynh_app_upgrading_from_version_before_or_equal_to 3.5.0~ynh2 ]; then
-  wait_until='--wait_until="Shutting down job result cleanup executor"'
-fi
-
-ynh_systemctl --service="$app" --action="stop" $wait_until
+ynh_systemctl --service="$app" --action="stop" --wait_until="Shutting down job result cleanup executor" --log_path="$install_dir/logs/info.log"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -59,7 +53,7 @@ ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failre
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --wait_until="Stirling-PDF running on port"
+ynh_systemctl --service="$app" --action="start" --wait_until="Stirling-PDF running on port" --log_path="$install_dir/logs/info.log"
 
 #=================================================
 # END OF SCRIPT

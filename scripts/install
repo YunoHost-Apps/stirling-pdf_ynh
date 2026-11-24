@@ -51,7 +51,7 @@ ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failre
 ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemctl --service="$app" --action="start" --wait_until="Stirling-PDF running on port"
+ynh_systemctl --service="$app" --action="start" --wait_until="Stirling-PDF running on port" --log_path="$install_dir/logs/info.log"
 
 #=================================================
 # END OF SCRIPT
