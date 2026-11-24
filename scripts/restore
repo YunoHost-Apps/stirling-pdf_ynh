@@ -30,7 +30,7 @@ ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_restore "/etc/systemd/system/$app.service"
 systemctl enable "$app.service" --quiet
 
-yunohost service add "$app" --description="Perform various operations on PDF files" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Perform various operations on PDF files" --log="$install_dir/logs/info.log"
 
 ynh_restore "/etc/fail2ban/jail.d/$app.conf"
 ynh_restore "/etc/fail2ban/filter.d/$app.conf"

@@ -40,7 +40,7 @@ ynh_config_add_nginx
 # Create a dedicated systemd config
 local_path=$install_dir/venv:$PATH
 ynh_config_add_systemd
-yunohost service add "$app" --description="Perform various operations on PDF files" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Perform various operations on PDF files" --log="$install_dir/logs/info.log"
 
 # Create a dedicated Fail2Ban config
 ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failregex="Failed login attempt from IP: <HOST>"
