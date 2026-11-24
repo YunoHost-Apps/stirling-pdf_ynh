@@ -7,7 +7,7 @@ name = "Stirling PDF"
 description.en = "Perform various operations on PDF files"
 description.fr = "Effectuez diverses opérations sur des fichiers PDF"
 
-version = "3.5.0~ynh1"
+version = "3.5.0~ynh2"
 
 maintainers = []
 
@@ -61,12 +61,12 @@ ram.runtime = "400M"
     autoupdate.asset = "Stirling-PDF.jar"
 
     [resources.sources.jdk]
-    amd64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_linux_hotspot_25.0.5_8.tar.gz"
-    amd64.sha256 = "68982529869257d0ee6b824ec5aa270ff8b118bb438670da0b97ebdab178d7fb"
-    arm64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5_8.tar.gz"
-    arm64.sha256 = "bb5b2ded252f21c6090cf780b0a408ad0d83bbb557e702955643557f13231880"
+    amd64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jdk_x64_linux_hotspot_25.0.5.1_2.tar.gz"
+    amd64.sha256 = "760f91b22c3efc9bd1b64ff950598231be82928cc807e30691a0e7a2995a62c0"
+    arm64.url = "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5.1%2B2/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.5.1_2.tar.gz"
+    arm64.sha256 = "c37879e0d08eeb1baa69fcbb7758cd455b7b1c0ceab1e2a136ccb1713c530984"
     autoupdate.strategy = "latest_github_release"
-    autoupdate.version_regex = "jdk-(\\d+\\.\\d+\\.\\d+)\\+(.*)"
+    autoupdate.version_regex = "jdk-(?P<major>\\d+(\\.\\d+)+)\\+(?P<rev>.*)"
     autoupdate.upstream = "https://github.com/adoptium/temurin25-binaries"
     autoupdate.asset.amd64 = "OpenJDK.*-jdk_x64_linux_hotspot_.*\\.tar\\.gz$"
     autoupdate.asset.arm64 = "OpenJDK.*-jdk_aarch64_linux_hotspot_.*\\.tar\\.gz$"
@@ -83,12 +83,4 @@ ram.runtime = "400M"
     [resources.ports]
 
     [resources.apt]
-    packages = "tesseract-ocr-fra, libreoffice, libreoffice-java-common, default-jre, libreoffice-writer, libreoffice-calc, libreoffice-impress, unpaper, ocrmypdf, qpdf, weasyprint"
-    packages_from_raw_bash = """
-    if [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
-        echo "unoconv";
-    elif [[ $YNH_DEBIAN_VERSION == "trixie" ]]; then
-        echo "";
-        # unoconv don't seem to exist in Trixie anymore ?!
-    fi
-    """
+    packages = "tesseract-ocr-fra, unpaper, ocrmypdf, qpdf, weasyprint, imagemagick"
