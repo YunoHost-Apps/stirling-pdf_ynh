@@ -38,7 +38,7 @@ ynh_script_progression "Adding system configurations related to $app..."
 ynh_config_add_nginx
 
 # Create a dedicated systemd config
-LOCAL_PATH=$install_dir/venv:$PATH
+local_path=$install_dir/venv:$PATH
 ynh_config_add_systemd
 yunohost service add "$app" --description="Perform various operations on PDF files" --log="/var/log/$app/$app.log"
 
