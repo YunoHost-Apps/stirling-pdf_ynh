@@ -83,4 +83,4 @@ ram.runtime = "400M"
     [resources.ports]
 
     [resources.apt]
-    packages = "tesseract-ocr-fra, unpaper, ocrmypdf, qpdf, weasyprint"
+    packages = "tesseract-ocr-fra, unpaper, ocrmypdf, qpdf, weasyprint, imagemagick"
