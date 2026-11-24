@@ -41,7 +41,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
 
-local_path=$install_dir/venv:$PATH
+local_path=$install_dir/venv/bin:$PATH
 ynh_config_add_systemd
 
 yunohost service add "$app" --description="Perform various operations on PDF files" --log="$install_dir/logs/info.log"
