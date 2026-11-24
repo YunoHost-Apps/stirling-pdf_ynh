@@ -7,6 +7,8 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
+Environment=JAVA_HOME=__INSTALL_DIR__/jdk
+Environment=PATH=__LOCAL_PATH__
 ExecStart=__INSTALL_DIR__/jdk/bin/java -jar Stirling-PDF.jar
 SuccessExitStatus=143
 ExecStop=/bin/kill -15 $MAINPID

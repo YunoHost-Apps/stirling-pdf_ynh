@@ -16,6 +16,10 @@ ynh_setup_source --dest_dir="$install_dir"
 
 ynh_setup_source --dest_dir="$install_dir/jdk" --source_id="jdk"
 
+python3 -m venv $install_dir/venv
+$install_dir/venv/bin/python3 -m pip install -U pip setuptools wheel
+$install_dir/venv/bin/python3 -m pip install weasyprint ocrmypdf
+
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
@@ -34,8 +38,9 @@ ynh_script_progression "Adding system configurations related to $app..."
 ynh_config_add_nginx
 
 # Create a dedicated systemd config
+local_path=$install_dir/venv/bin:$PATH
 ynh_config_add_systemd
-yunohost service add "$app" --description="Perform various operations on PDF files" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Perform various operations on PDF files" --log="$install_dir/logs/info.log"
 
 # Create a dedicated Fail2Ban config
 ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failregex="Failed login attempt from IP: <HOST>"
@@ -46,7 +51,7 @@ ynh_config_add_fail2ban --logpath="$install_dir/logs/invalid-auths.log" --failre
 ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemctl --service="$app" --action="start"
+ynh_systemctl --service="$app" --action="start" --wait_until="Stirling-PDF running on port" --log_path="$install_dir/logs/info.log"
 
 #=================================================
 # END OF SCRIPT
